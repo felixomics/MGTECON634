@@ -1,3 +1,5 @@
+# there is a change
+
 #####################################
 # Reading processed datasets into R #
 #####################################
@@ -5,6 +7,7 @@
 #install.packages("AER")
 #install.packages("MatchIt")
 #install.packages("twang")
+library(MASS)
 library(AER)
 library(devtools)
 library(randomForest) 
@@ -124,7 +127,7 @@ summary(ols_results1)
 confint(ols_results1, 'W', level=0.95)
 
 
-##############################
+#############################
 # propensity score weighting #
 ##############################
 # logit of W on x's
